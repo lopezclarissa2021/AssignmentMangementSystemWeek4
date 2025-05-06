@@ -6,9 +6,9 @@ namespace AssignmentManagement.UI
 {
     public class ConsoleUI
     {
-        private readonly AssignmentService _assignmentService;
+        private readonly IAssignmentService _assignmentService;
 
-        public ConsoleUI(AssignmentService assignmentService)
+        public ConsoleUI(IAssignmentService assignmentService)
         {
             _assignmentService = assignmentService;
         }
