@@ -7,7 +7,7 @@ using System;
 
 namespace AssignmentManagement.Console
 {
-    internal class Program
+    public class Program
     {
         public static void Main(string[] args) // 🔥 Static Main method — this is required
         {
@@ -17,6 +17,8 @@ namespace AssignmentManagement.Console
             services.AddSingleton<ConsoleUI>();
 
             var serviceProvider = services.BuildServiceProvider();
+
+
             var consoleUI = serviceProvider.GetRequiredService<ConsoleUI>();
 
             consoleUI.Run();
